@@ -8,6 +8,7 @@ import ReactUid from '../pages/ReactUid'
 import ReactUidSeed from '../pages/ReactUidSeed'
 import ReactUidHooks from '../pages/ReactUidHooks'
 import UUIDonUseEffect from '../pages/UUIDonUseEffect'
+import UseExperimentalHooks from '../pages/UseExperimentalHooks'
 
 const BrowserRoutes = () => {
   return (
@@ -18,6 +19,10 @@ const BrowserRoutes = () => {
       <Route path={`/${ROUTES.ReactUid}`} component={ReactUid} />
       <Route path={`/${ROUTES.ReactUidSeed}`} component={ReactUidSeed} />
       <Route path={`/${ROUTES.ReactUidHooks}`} component={ReactUidHooks} />
+      <Route
+        path={`/${ROUTES.ReactUseExperimentalHooks}`}
+        component={UseExperimentalHooks}
+      />
     </Switch>
   )
 }
