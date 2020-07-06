@@ -6,5 +6,14 @@ This is a demo of the behavior when setting a unique ID for the Label attribute 
 
 ```
 $ yarn
+```
+
+legacy mode
+```
 $ yarn dev
+```
+
+concurrent mode
+```
+$ yarn dev:concurrentmode
 ```

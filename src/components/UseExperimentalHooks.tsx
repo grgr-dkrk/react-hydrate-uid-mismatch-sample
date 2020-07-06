@@ -4,6 +4,7 @@ export const UseExperimentalHooks: React.FC = () => {
   // @ts-ignore
   const id = React.unstable_useOpaqueIdentifier()
 
+  console.log('log:useOpaqueIdentifier id')
   console.log(id)
 
   return (

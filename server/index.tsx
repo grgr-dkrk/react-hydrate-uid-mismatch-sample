@@ -5,6 +5,8 @@ import { StaticRouter } from 'react-router-dom'
 import { App } from '../src/app'
 import { ServerLayout } from './ServerLayout'
 
+console.log(process.env.RENDER_MODE)
+
 const app = express()
 
 app.use(express.static('public'))

@@ -9,6 +9,7 @@ import ReactUidSeed from '../pages/ReactUidSeed'
 import ReactUidHooks from '../pages/ReactUidHooks'
 import UUIDonUseEffect from '../pages/UUIDonUseEffect'
 import UseExperimentalHooks from '../pages/UseExperimentalHooks'
+import UseExperimentalHooksWithConcurrentMode from '../pages/UseExperimentalHooksWithConcurrentMode'
 
 const BrowserRoutes = () => {
   return (
@@ -23,6 +24,10 @@ const BrowserRoutes = () => {
         path={`/${ROUTES.ReactUseExperimentalHooks}`}
         component={UseExperimentalHooks}
       />
+      {process.env.RENDER_MODE !== 'lagacy' && <Route
+        path={`/${ROUTES.ReactUseExperimentalHooksWithCM}`}
+        component={UseExperimentalHooksWithConcurrentMode}
+      />}
     </Switch>
   )
 }
