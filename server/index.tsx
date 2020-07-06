@@ -3,7 +3,7 @@ import * as React from 'react'
 import * as ReactDOMServer from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
 import { App } from '../src/app'
-import { ServerLayout } from '../src/ServerLayout'
+import { ServerLayout } from './ServerLayout'
 
 const app = express()
 
